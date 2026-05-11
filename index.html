@@ -57,6 +57,18 @@
       </section>
 
       <section class="block">
+        <button class="featured featured-lib" data-cat="library">
+          <div class="featured-bg-2"></div>
+          <div class="featured-content">
+            <p class="muted small">textos para ler em voz alta</p>
+            <h2 style="margin-bottom:4px">Biblioteca</h2>
+            <p class="featured-sub">29 textos: curtos, parágrafos, discursos, poesia, notícias, crônicas, diálogos</p>
+            <span class="featured-cta">Abrir biblioteca →</span>
+          </div>
+        </button>
+      </section>
+
+      <section class="block">
         <h2>Categorias</h2>
         <div class="cat-grid">
           <button class="cat" data-cat="warmup">
@@ -79,6 +91,16 @@
             <p class="cat-title">Pausas</p>
             <p class="cat-sub muted small">Espaçamento</p>
           </button>
+          <button class="cat" data-cat="articulation">
+            <div class="cat-icon" style="--c1:#a8edea;--c2:#fed6e3;color:#1a1a30">🔢</div>
+            <p class="cat-title">Articulação</p>
+            <p class="cat-sub muted small">Números, volume</p>
+          </button>
+          <button class="cat" data-cat="expression">
+            <div class="cat-icon" style="--c1:#fbc2eb;--c2:#a18cd1">🎭</div>
+            <p class="cat-title">Expressão</p>
+            <p class="cat-sub muted small">Emoção, ênfase</p>
+          </button>
           <button class="cat" data-cat="improv">
             <div class="cat-icon" style="--c1:#ff9d6b;--c2:#ff4d6d">🎤</div>
             <p class="cat-title">Improviso</p>
@@ -100,6 +122,23 @@
       <div class="block">
         <button class="btn ghost" id="resetBtn">Zerar progresso</button>
       </div>
+    </section>
+
+    <!-- List screen -->
+    <section class="screen hidden" data-screen="list">
+      <header class="ex-header">
+        <button class="icon-btn" id="listBack" aria-label="Voltar">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M14 6l-6 6 6 6 1.4-1.4L10.8 12l4.6-4.6z"/></svg>
+        </button>
+        <div class="ex-title">
+          <p class="muted small" id="listCount">0 exercícios</p>
+          <h2 id="listTitle">Categoria</h2>
+        </div>
+        <button class="icon-btn" id="listRandom" aria-label="Aleatórios" title="Aleatórios">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M17 3l4 4-4 4v-3h-3.5l-2 2.5L8 6H3V4h5l2.6 3.3L13.4 4H17V3zm0 14v3l-4-4 4-4v3h-3.5l-2.6-3.3-3 4H3v-2h5l3-4 3 4h3v0z"/></svg>
+        </button>
+      </header>
+      <div id="listItems" class="list-items"></div>
     </section>
 
     <!-- Exercise screen -->

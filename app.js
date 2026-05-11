@@ -73,6 +73,192 @@ const CONTENT = {
           "Apresentação curta para 3+ pessoas",
         ],
       },
+      {
+        type: "easyOnset",
+        title: "Início suave — saudações",
+        sub: "Palavras que a gente usa todo dia — ensaie em casa.",
+        body: "Um suspiro leve antes de cada palavra. A primeira vogal nasce já vibrando, sem tranco. Repita cada uma 3 vezes.",
+        words: ["Oi", "Olá", "Bom dia", "Boa tarde", "Boa noite", "Tudo bem?", "Como vai?", "Prazer", "Obrigado", "Até logo"],
+      },
+      {
+        type: "easyOnset",
+        title: "Início suave — sons difíceis",
+        sub: "Foco em palavras com R, G, D — letras que costumam travar mais.",
+        body: "Sinta o ar antes do som. Não force a língua, não trave a mandíbula. Deslize para dentro da palavra.",
+        words: ["Realmente", "Recado", "Difícil", "Domingo", "Grande", "Garoto", "Geração", "Diretor", "Definir", "Dúvida"],
+      },
+      {
+        type: "prolonged",
+        title: "Fala alongada — apresentação",
+        sub: "Use quando precisar se apresentar e a tensão subir.",
+        body: "Booom diiia. Meeu noome é... Eeu trabaalho com... E hooje vou faaalar sooobre... Aalongue. Reespire. Sem preeessa.",
+      },
+      {
+        type: "prolonged",
+        title: "Fala alongada — pedido",
+        sub: "Pedir café, comida, informação — situações cotidianas.",
+        body: "Booom diia. Eeu queriiia uum cafééé pequeeno, por favooor. Sem aaaçúcar. Obriiigado.",
+      },
+      {
+        type: "shadow",
+        title: "Coro — texto motivacional",
+        sub: "Acompanhe em voz alta",
+        body: "Hoje é um dia novo. Eu posso travar, posso errar, posso recomeçar. O que importa não é falar perfeito. O que importa é falar — e seguir falando.",
+        rate: 0.85,
+      },
+      {
+        type: "shadow",
+        title: "Coro — descrição",
+        sub: "Acompanhe em voz alta",
+        body: "A janela estava aberta. O vento entrava devagar, trazendo o cheiro de chuva. Era começo de tarde, e a cidade ainda parecia adormecida. Ele olhou pra fora, respirou fundo, e começou a falar.",
+        rate: 0.9,
+      },
+      {
+        type: "prompt",
+        title: "Pseudogagueira — dessensibilização",
+        body: "Leia este parágrafo em voz alta, MAS de propósito, repita a primeira sílaba de algumas palavras 2 ou 3 vezes (\"ho-ho-hoje\", \"qua-qua-quando\"). Pode parecer estranho — é exatamente o objetivo. Pra-pra-praticar a sensação reduz o medo de gaguejar de verdade. Repita 2x.",
+      },
+    ],
+  },
+
+  articulation: {
+    name: "Articulação",
+    items: [
+      {
+        type: "numbers",
+        title: "Sequência de números",
+        body: "Leia em voz alta, articulando cada dígito sem juntar nem comer som. Sem pressa.",
+        sequences: ["um, dois, três, quatro, cinco, seis, sete, oito, nove, dez", "23, 47, 81, 15, 92, 60, 38, 74, 56, 19", "1.245", "27.893", "R$ 4.230,75", "(11) 98765-4321", "01/05/2026", "192.168.2.84"],
+      },
+      {
+        type: "numbers",
+        title: "Números por extenso",
+        body: "Pronuncie cada número POR EXTENSO. Foco em terminações claras (-enta, -entos).",
+        sequences: ["75", "138", "1.247", "32.500", "1.500.000", "0,75", "3,14", "trezentos e quarenta e dois", "mil novecentos e oitenta e quatro", "duzentos e cinquenta mil reais"],
+      },
+      {
+        type: "volume",
+        title: "Modular volume",
+        sub: "Mesma frase, três volumes — sem perder articulação",
+        text: "Hoje é um dia novo, e eu vou aproveitá-lo bem.",
+        levels: ["sussurro (audível, mas baixo)", "conversa normal", "projetado (como se houvesse 10 pessoas na sala)"],
+      },
+      {
+        type: "volume",
+        title: "Crescendo controlado",
+        sub: "Comece baixo, vá subindo — sem gritar",
+        text: "Um. Dois. Três. Quatro. Cinco. Seis. Sete. Oito. Nove. Dez.",
+        levels: ["1-3 sussurro", "4-6 normal", "7-10 projetado"],
+      },
+      {
+        type: "prompt",
+        title: "Articular consoantes finais",
+        body: "Em português a gente costuma engolir o final das palavras. Leia esta lista articulando MUITO o final: \"andando, falando, cantando, vivendo, sabendo, fazendo, querendo, dizendo\". Sinta a língua bater no \"-ndo\".",
+      },
+      {
+        type: "prompt",
+        title: "Vogais abertas e fechadas",
+        body: "Repita: \"avô / avó · este / esse · pôde / pode · gosto / gosto\". As mesmas letras, sons diferentes. Sentir essa diferença afina a fala.",
+      },
+    ],
+  },
+
+  expression: {
+    name: "Expressão",
+    items: [
+      {
+        type: "emotionRead",
+        title: "Mesma frase, emoções diferentes",
+        sub: "Toque cada emoção e leia a frase com aquele sentimento.",
+        text: "Eu não acredito no que aconteceu hoje.",
+        emotions: ["Alegria", "Tristeza", "Raiva", "Surpresa", "Calma", "Medo", "Sarcasmo", "Cansaço"],
+      },
+      {
+        type: "emotionRead",
+        title: "Frase curta com camadas",
+        sub: "Mude tudo só com a entonação.",
+        text: "Você fez isso de novo.",
+        emotions: ["Decepção", "Orgulho", "Espanto", "Brincadeira", "Indignação", "Carinho"],
+      },
+      {
+        type: "emotionRead",
+        title: "Apresentação com emoção",
+        sub: "A mesma fala, três versões.",
+        text: "Meu nome é Luigi, e é um prazer estar aqui hoje.",
+        emotions: ["Formal", "Casual e leve", "Empolgado", "Tímido", "Confiante"],
+      },
+      {
+        type: "stressShift",
+        title: "Mudar a ênfase muda o sentido",
+        sub: "Toque em uma palavra — leia a frase enfatizando ELA.",
+        text: "Eu não disse isso para você ontem.",
+      },
+      {
+        type: "stressShift",
+        title: "Ênfase em frase longa",
+        sub: "Qual palavra é a 'estrela' da frase? Teste todas.",
+        text: "Ele quer trabalhar com a gente no próximo semestre.",
+      },
+      {
+        type: "stressShift",
+        title: "Foco e contraste",
+        sub: "Cada ênfase implica um contraste diferente.",
+        text: "Hoje a reunião começa às nove da manhã.",
+      },
+      {
+        type: "prompt",
+        title: "Curva melódica — pergunta/afirmação",
+        body: "Diga a mesma frase \"Você está pronto\" três vezes: como afirmação (descendo no final), como pergunta (subindo no final), e como ironia (acelerando no meio). A entonação CARREGA o sentido.",
+      },
+    ],
+  },
+
+  library: {
+    name: "Biblioteca",
+    items: [
+      // === CURTOS - frases de aquecimento ===
+      { type: "library", genre: "Curto", title: "Voz como ferramenta", text: "A voz é um músculo. Trate-a como tal — aquece, alonga, descansa." },
+      { type: "library", genre: "Curto", title: "Hoje eu falo", text: "Hoje eu falo. Devagar, mas falo. Travando, mas falo. Eu falo." },
+      { type: "library", genre: "Curto", title: "Silêncio antes", text: "O silêncio antes da palavra dá peso à palavra. Não tenha pressa." },
+      { type: "library", genre: "Curto", title: "Quem se ouve", text: "Quem se ouve, se ajusta. Quem se ajusta, melhora. O resto vem com o tempo." },
+      { type: "library", genre: "Curto", title: "Cada respiração", text: "Cada respiração é uma chance de recomeçar a frase. Não desista no meio." },
+      { type: "library", genre: "Curto", title: "Claro, não perfeito", text: "Eu não falo perfeito. Eu falo claro. E claro é o que importa." },
+
+      // === PARÁGRAFOS - texto neutro ===
+      { type: "library", genre: "Parágrafo", title: "A voz", text: "A voz é uma ferramenta. Como qualquer ferramenta, ela precisa de cuidado, de afinação e de prática. Quem fala bem não nasceu falando bem: aprendeu, escutou, errou e tentou de novo. O segredo está na constância, não no talento." },
+      { type: "library", genre: "Parágrafo", title: "Manhã", text: "A cada manhã, antes de começar o dia, eu paro por um instante. Respiro fundo, sinto o ar entrando devagar, e lembro: o que vier hoje, eu encaro com calma. A pressa raramente ajuda. A pressa atropela a fala, atropela o pensamento, e atropela a gente." },
+      { type: "library", genre: "Parágrafo", title: "Comunicação", text: "Comunicar não é falar. Comunicar é ser entendido. E a diferença entre uma coisa e outra está no espaço que você dá para o outro escutar. Quem fala muito rápido fala só pra si mesmo. Quem fala no ritmo do outro, abre passagem." },
+      { type: "library", genre: "Parágrafo", title: "Silêncio", text: "Tem gente que tem medo do silêncio. Acha que se parar de falar, perde a vez. Mas a verdade é o contrário: o silêncio é onde a sua palavra ganha eco. É o intervalo que faz a música existir." },
+      { type: "library", genre: "Parágrafo", title: "Confiança", text: "Confiança não nasce de palavras bonitas. Nasce do jeito que você fala. Calmo. Claro. Sem pressa. Quando você dá tempo para a sua própria voz, o outro também dá tempo para te ouvir." },
+      { type: "library", genre: "Parágrafo", title: "Repetição", text: "Existe um segredo que ninguém vende: melhorar é repetir. Não é descobrir um método mágico, não é nascer com dom. É voltar amanhã ao mesmo lugar onde você travou hoje. Voltar, e tentar de novo, e tentar mais uma vez." },
+
+      // === DISCURSOS curtos ===
+      { type: "library", genre: "Discurso", title: "Abertura de reunião", text: "Boa tarde a todos. Quero começar agradecendo a presença de cada um. Sei que o tempo é curto, e o assunto que vamos tratar pede atenção. Por isso prometo ser direto: o que está na mesa hoje muda o rumo da próxima etapa. Vamos com calma." },
+      { type: "library", genre: "Discurso", title: "Agradecimento", text: "Eu não esperava estar aqui hoje. Quando comecei, faz um tempo, ninguém apostou. Inclusive eu mesmo, em alguns dias. Mas as pessoas certas apareceram, no momento certo, dizendo as coisas certas. E é a essas pessoas que eu agradeço. Sem elas, eu não falaria com vocês agora." },
+      { type: "library", genre: "Discurso", title: "Motivacional curto", text: "Você não precisa ser o melhor. Você precisa ser consistente. O melhor cansa, perde, recua. O consistente continua. Todo dia. Pouquinho por pouquinho. E é essa repetição — chata, lenta, invisível — que muda tudo." },
+      { type: "library", genre: "Discurso", title: "Apresentação pessoal", text: "Meu nome é... Eu trabalho com... E o que me trouxe aqui hoje é uma pergunta simples: por que tanta gente fala, mas tão pouca gente é ouvida? Vou tentar responder isso nos próximos minutos — não com teoria, mas com o que aprendi na prática." },
+      { type: "library", genre: "Discurso", title: "Encerramento", text: "Antes de encerrar, queria deixar uma única ideia com vocês. Não é nova, não é minha, mas vale repetir: a maior diferença entre quem fala bem e quem fala mal não está no vocabulário. Está na coragem de pausar. Obrigado." },
+
+      // === POESIA - domínio público ===
+      { type: "library", genre: "Poesia", title: "Via Láctea (Olavo Bilac)", author: "Olavo Bilac (1865–1918)", text: "Ora (direis) ouvir estrelas! Certo / perdeste o senso! E eu vos direi, no entanto, / que, para ouvi-las, muita vez desperto / e abro as janelas, pálido de espanto..." },
+      { type: "library", genre: "Poesia", title: "Meus Oito Anos (fragmento)", author: "Casimiro de Abreu (1839–1860)", text: "Oh! que saudades que eu tenho / Da aurora da minha vida, / Da minha infância querida / Que os anos não trazem mais! / Que amor, que sonhos, que flores, / Naquelas tardes fagueiras / À sombra das bananeiras, / Debaixo dos laranjais!" },
+      { type: "library", genre: "Poesia", title: "Círculo Vicioso (Machado de Assis)", author: "Machado de Assis (1839–1908)", text: "Bailando no ar, gemia inquieto vaga-lume: / — Quem me dera que eu fosse aquela loura estrela, / Que arde no eterno azul, como uma eterna vela! / Mas a estrela, fitando a lua, com ciúme:" },
+      { type: "library", genre: "Poesia", title: "Navio Negreiro (abertura)", author: "Castro Alves (1847–1871)", text: "'Stamos em pleno mar... Doudo no espaço / Brinca o luar — dourada borboleta; / E as vagas após ele correm... cansam / Como turba de infantes inquieta." },
+
+      // === NOTÍCIAS ===
+      { type: "library", genre: "Notícia", title: "Tecnologia", text: "Um grupo de pesquisadores de São Paulo apresentou nesta semana um novo método baseado em inteligência artificial para auxiliar no diagnóstico precoce de distúrbios da fala. Segundo os autores, a técnica analisa padrões acústicos que escapam ao ouvido humano, e pode reduzir em até quarenta por cento o tempo entre o primeiro sintoma e o início do tratamento." },
+      { type: "library", genre: "Notícia", title: "Economia", text: "O Banco Central anunciou hoje a manutenção da taxa básica de juros. A decisão era amplamente esperada pelo mercado, e veio acompanhada de um comunicado que destacou a queda gradual da inflação nos últimos meses. Analistas projetam novas reduções para o segundo semestre, desde que o cenário externo permaneça estável." },
+      { type: "library", genre: "Notícia", title: "Cultura", text: "Foi aberta nesta sexta-feira, no centro de Curitiba, a exposição que reúne mais de duzentas fotografias inéditas do interior do Paraná. As imagens, captadas ao longo de três décadas, mostram o cotidiano de pequenas cidades, festas tradicionais e paisagens que vêm desaparecendo. A entrada é gratuita até o fim do mês." },
+
+      // === CRÔNICAS ===
+      { type: "library", genre: "Crônica", title: "O cara do café", text: "Tem um cara no café da esquina que sabe o nome de todo mundo. Sério, todo mundo. Você entra uma vez, distraído, paga o café, vai embora. Volta uma semana depois e ele te chama pelo nome. Eu já parei pra pensar como é que ele faz isso. Acho que é simples: ele presta atenção. E nessa cidade onde quase ninguém presta atenção em ninguém, prestar atenção virou superpoder." },
+      { type: "library", genre: "Crônica", title: "Trânsito", text: "O trânsito da segunda de manhã não tem perdão. Buzina, freada, palavrão, retrovisor torto. Mas hoje aconteceu uma coisa engraçada: um cara parou no meio do cruzamento, abriu a janela e deixou um cachorro atravessar. Atrás dele, quinze carros buzinando. À frente dele, um cachorro andando devagar, como se o mundo todo dependesse daquele atravessamento. E dependia." },
+      { type: "library", genre: "Crônica", title: "A primeira vez", text: "Toda primeira vez é estranha. A primeira vez que você fala em público, a primeira vez que você dirige na chuva, a primeira vez que você diz que ama. Tem sempre um momento, no meio, em que você acha que vai dar errado. E às vezes dá. Mas o engraçado é que depois, quando você lembra, você só lembra do começo e do fim. O meio, aquele meio que ardia, some." },
+
+      // === DIÁLOGOS - 2 vozes ===
+      { type: "library", genre: "Diálogo", title: "Reunião", text: "— Bom dia. Vocês já tiveram tempo de olhar os números do trimestre?\n— Olhamos. E temos algumas perguntas.\n— Ótimo. É exatamente pra isso que estamos aqui. Manda.\n— A receita caiu 8%, mas a margem subiu. Isso é sustentável?\n— Boa pergunta. Vou ser honesto: a margem subiu porque cortamos custos, não porque crescemos. Então não, não é sustentável a longo prazo." },
+      { type: "library", genre: "Diálogo", title: "Atendimento", text: "— Boa tarde. Em que posso ajudar?\n— Oi, comprei um produto aqui semana passada e veio com defeito.\n— Sinto muito por isso. Você tem o número do pedido?\n— Tenho aqui. É o 47892.\n— Achei. Já vou abrir a troca. Você prefere reembolso ou um produto novo?\n— Novo, se possível.\n— Combinado. Mando hoje ainda." },
+      { type: "library", genre: "Diálogo", title: "Conversa casual", text: "— E aí, como tá?\n— Tô bem, e você?\n— Cansado. Mas é aquela coisa boa, sabe?\n— Sei sim. Cansaço de coisa que tá dando certo é diferente.\n— Exato. Você que sabe.\n— Mas relaxa. Final de semana descansa.\n— Vou tentar. Hoje à noite já é começo." },
     ],
   },
 
@@ -127,12 +313,30 @@ const CONTENT = {
       { type: "tongueTwister", text: "A aranha arranha a rã. A rã arranha a aranha. Nem a aranha arranha a rã, nem a rã arranha a aranha." },
       { type: "tongueTwister", text: "Olha o sapo dentro do saco. O saco com o sapo dentro. O sapo batendo papo, e o papo soltando vento." },
       { type: "tongueTwister", text: "Um tigre, dois tigres, três tigres trotavam tranquilamente." },
-      { type: "tongueTwister", text: "Bagre branco, branco bagre." },
+      { type: "tongueTwister", text: "Bagre branco, branco bagre. Branco bagre, bagre branco." },
       { type: "tongueTwister", text: "A casa do padre Pedro Paulo Pereira Pinto é pintada de pinta preta, pinta branca e pinta parda." },
       { type: "tongueTwister", text: "Sabia que o sabiá sabia assobiar?" },
       { type: "tongueTwister", text: "Disse o tatu para o tatuí: \"se eu tatuasse você, você se tatuaria?\"" },
       { type: "tongueTwister", text: "Em três quintas-feiras tristes, três tigres tigrados trituravam trigo num triturador." },
       { type: "tongueTwister", text: "O caju do Cacuru é do Juca, o caju do Juca é do Cacuru." },
+      { type: "tongueTwister", text: "Trinta e três tristes tatus tropeçaram em três torres tortas." },
+      { type: "tongueTwister", text: "O peito do pé do Pedro é preto. Quem disser que o peito do pé do Pedro é preto, tem o peito do pé mais preto que o peito do pé do Pedro." },
+      { type: "tongueTwister", text: "Atrás da pia tem um prato. Dentro do prato tem uma faca. E dentro da faca, um bichinho me espia." },
+      { type: "tongueTwister", text: "O doce perguntou pro doce qual é o doce mais doce. O doce respondeu pro doce que o doce mais doce é o doce de batata-doce." },
+      { type: "tongueTwister", text: "A babá boba bebeu o leite do bebê e babou no babador." },
+      { type: "tongueTwister", text: "Larga a porca, larga a vaca, larga a galinha — eu cuido do galo." },
+      { type: "tongueTwister", text: "Quem com ferro fere, com ferro será ferido." },
+      { type: "tongueTwister", text: "Pinga pinga pinga uma pinga na panela do Pedro." },
+      { type: "tongueTwister", text: "Maria mandava maçãs. Mariana mandava macacos. Os macacos roeram as maçãs da Maria." },
+      { type: "tongueTwister", text: "Bota a bota e tira a bota; tira a bota e bota a bota." },
+      { type: "tongueTwister", text: "Vinte e três viajantes velozes velejaram veleiros verdes." },
+      { type: "tongueTwister", text: "Faca não corta faca. Faca corta carne." },
+      { type: "tongueTwister", text: "O xerife xingou o xeque xato no xadrez." },
+      { type: "tongueTwister", text: "Pedrinha pintada de pinta preta, pinta preta de pedrinha pintada." },
+      { type: "tongueTwister", text: "Sou um mero mineiro. Meu mero martelo é meu." },
+      { type: "tongueTwister", text: "Pinguim pinta poleiros, peru passeia por pinheirais." },
+      { type: "tongueTwister", text: "O cachorro do conde dorme. O conde, do cachorro, sonha." },
+      { type: "tongueTwister", text: "Caixa de feixos secos. Seis caixas de feixos secos. Seiscentos feixos secos em seis caixas secas." },
     ],
   },
 
@@ -156,6 +360,30 @@ const CONTENT = {
         title: "Discurso curto",
         body: "Boa noite a todos. Quero começar agradecendo pela presença de cada um aqui. Sei que o tempo é escasso, e a atenção, ainda mais. Por isso prometo ser breve, claro e direto.",
         wpm: 120,
+      },
+      {
+        type: "pacedRead",
+        title: "Texto descritivo",
+        body: "Existem dias em que tudo flui. As palavras vêm fáceis, o ritmo se ajusta sozinho, e a voz parece pertencer à pessoa que fala. Outros dias, tudo trava. Mas o que separa um do outro raramente é talento — é repetição.",
+        wpm: 130,
+      },
+      {
+        type: "pacedRead",
+        title: "Notícia",
+        body: "Pesquisadores brasileiros publicaram um estudo sobre técnicas de fluência da fala. Segundo o trabalho, a combinação de respiração diafragmática, leitura cronometrada e pausas estratégicas tem efeito direto sobre a clareza da comunicação oral.",
+        wpm: 140,
+      },
+      {
+        type: "pacedRead",
+        title: "Crônica curta",
+        body: "Era cedo quando ele saiu. O sol mal aparecia, e a rua ainda dormia. Caminhou devagar, respirou fundo, e disse pra si mesmo: hoje eu falo. Não importa como soe. Não importa se travar. Hoje, eu falo.",
+        wpm: 120,
+      },
+      {
+        type: "pacedRead",
+        title: "Persuasivo",
+        body: "Pense numa coisa simples: as pessoas não compram o que você vende. Elas compram a confiança que sentem em você. E confiança não nasce de palavras bonitas — nasce do jeito que você fala. Calmo. Claro. Sem pressa.",
+        wpm: 125,
       },
       {
         type: "metronome",
@@ -184,6 +412,26 @@ const CONTENT = {
         body: "Meu nome é... | trabalho com... || E o que me trouxe aqui hoje | foi uma pergunta simples: || por que tanta gente fala, | mas tão pouca gente é ouvida?",
       },
       {
+        type: "pausedRead",
+        title: "Falar bem",
+        body: "Falar bem | não é falar rápido. || É falar de um jeito | que dá tempo | de ser compreendido. | Quem tem pressa | empurra as palavras. | Quem tem clareza | deixa elas pousarem.",
+      },
+      {
+        type: "pausedRead",
+        title: "Três segundos de atenção",
+        body: "Você | tem três segundos | de atenção. || Se nesses três segundos | você não disser algo que importe, || perdeu. | Então respire, | escolha a palavra, | e diga ela | como se fosse a única.",
+      },
+      {
+        type: "pausedRead",
+        title: "Onde mora a ênfase",
+        body: "A pausa | é onde mora a ênfase. || Sem ela, | tudo é apenas | barulho. || Com ela, | até a frase mais simples | ganha peso.",
+      },
+      {
+        type: "pausedRead",
+        title: "Reunião",
+        body: "Boa tarde, pessoal. | Antes de começar, || quero alinhar uma coisa: | o que vamos discutir aqui hoje | não é uma decisão fechada. || É um debate. | E o melhor debate | acontece | quando todo mundo se ouve.",
+      },
+      {
         type: "prompt",
         title: "Regra dos 3 segundos",
         body: "Leia qualquer frase em voz alta. Ao chegar num ponto final, conte mentalmente \"1... 2... 3\" antes de continuar. Repita 5 vezes — você vai sentir o peso de cada frase aumentar.",
@@ -205,7 +453,30 @@ const CONTENT = {
       { type: "improv", topic: "Descreva sua manhã ideal — em detalhes.", seconds: 90 },
       { type: "improv", topic: "Argumente a favor de errar em público.", seconds: 60 },
       { type: "improv", topic: "Apresente-se como se fosse uma entrevista de emprego.", seconds: 60 },
-      { type: "improv", topic: "Fale sobre um livro / filme que mudou alguma coisa em você.", seconds: 90 },
+      { type: "improv", topic: "Fale sobre um livro ou filme que mudou alguma coisa em você.", seconds: 90 },
+      { type: "improv", topic: "O que você diria pro seu eu de 15 anos atrás?", seconds: 90 },
+      { type: "improv", topic: "Por que ler livros físicos ainda faz sentido em 2026?", seconds: 60 },
+      { type: "improv", topic: "Convença alguém a sair da zona de conforto.", seconds: 60 },
+      { type: "improv", topic: "Conte sobre o pior conselho que você já recebeu.", seconds: 60 },
+      { type: "improv", topic: "Como você explicaria a internet para alguém que viveu nos anos 50?", seconds: 90 },
+      { type: "improv", topic: "O que você faria se ganhasse 1 milhão amanhã?", seconds: 90 },
+      { type: "improv", topic: "Defenda o ócio.", seconds: 60 },
+      { type: "improv", topic: "Qual é a pergunta que ninguém te faz, mas você queria responder?", seconds: 90 },
+      { type: "improv", topic: "Por que pedir desculpa é tão difícil?", seconds: 60 },
+      { type: "improv", topic: "Apresente sua cidade pra um turista em 60 segundos.", seconds: 60 },
+      { type: "improv", topic: "O que te dá energia? E o que te tira?", seconds: 90 },
+      { type: "improv", topic: "Você é apresentador de TV. Apresente o telejornal.", seconds: 60 },
+      { type: "improv", topic: "Conte uma vez em que você mudou de ideia sobre algo importante.", seconds: 90 },
+      { type: "improv", topic: "Convença alguém a parar de procrastinar — começando agora.", seconds: 60 },
+      { type: "improv", topic: "Por que o silêncio incomoda tanto?", seconds: 60 },
+      { type: "improv", topic: "Tema: medo. 60 segundos. Vai.", seconds: 60 },
+      { type: "improv", topic: "Conte como foi seu primeiro dia em algo (trabalho, escola, esporte).", seconds: 90 },
+      { type: "improv", topic: "Qual conselho você daria pra você mesmo daqui a 10 anos?", seconds: 90 },
+      { type: "improv", topic: "Defenda a ideia: 'tudo é negociável'.", seconds: 60 },
+      { type: "improv", topic: "Descreva sua tarde perfeita, sem celular.", seconds: 90 },
+      { type: "improv", topic: "Qual a maior mentira que a sua geração conta pra si mesma?", seconds: 90 },
+      { type: "improv", topic: "Conte sobre um lugar que mudou você.", seconds: 90 },
+      { type: "improv", topic: "Como você se prepara mentalmente pra um dia difícil?", seconds: 60 },
     ],
   },
 
@@ -389,6 +660,11 @@ function renderExercise() {
     case "shadow": renderShadow(body, it); break;
     case "daf": renderDAF(body, it); break;
     case "hierarchy": renderHierarchy(body, it); break;
+    case "emotionRead": renderEmotionRead(body, it); break;
+    case "stressShift": renderStressShift(body, it); break;
+    case "numbers": renderNumbers(body, it); break;
+    case "volume": renderVolume(body, it); break;
+    case "library": renderLibrary(body, it); break;
     default: renderPrompt(body, { body: "Exercício não encontrado." });
   }
 }
@@ -414,8 +690,13 @@ function endSession() {
   }
   save();
   cleanupExercise();
-  showScreen("home");
-  renderHome();
+  const back = session.source && session.source.startsWith("list:") ? session.source.slice(5) : null;
+  if (back) {
+    showList(back);
+  } else {
+    showScreen("home");
+    renderHome();
+  }
   toast("Treino registrado ✓");
 }
 
@@ -921,6 +1202,171 @@ function renderDAF(root, it) {
   });
 }
 
+// ====== Expressão / Articulação ======
+function renderEmotionRead(root, it) {
+  root.innerHTML = `
+    <div class="ex-card">
+      <p class="muted small" style="text-align:center">${it.sub}</p>
+      <p class="ex-prompt big" style="margin:18px 0">"${it.text}"</p>
+      <div class="emotion-grid">
+        ${it.emotions.map(e => `<button class="emo-pill">${e}</button>`).join("")}
+      </div>
+      <p class="muted small" style="text-align:center;margin-top:14px">Toque uma emoção e leia a frase com ela. Marque conforme for fazendo.</p>
+    </div>
+  `;
+  root.querySelectorAll(".emo-pill").forEach(p => {
+    p.addEventListener("click", () => p.classList.toggle("done"));
+  });
+}
+
+function renderStressShift(root, it) {
+  const words = it.text.split(/\s+/);
+  root.innerHTML = `
+    <div class="ex-card">
+      <p class="muted small" style="text-align:center">${it.sub}</p>
+      <p class="stress-sentence" id="stressSentence">
+        ${words.map((w,i) => `<span class="sw" data-i="${i}">${w}</span>`).join(" ")}
+      </p>
+      <p class="muted small" style="text-align:center;margin-top:14px">Toque uma palavra → leia a frase enfatizando ELA. Sinta como o sentido muda.</p>
+    </div>
+  `;
+  root.querySelectorAll(".sw").forEach(sw => {
+    sw.addEventListener("click", () => {
+      root.querySelectorAll(".sw").forEach(s => s.classList.remove("hit"));
+      sw.classList.add("hit");
+    });
+  });
+}
+
+function renderNumbers(root, it) {
+  root.innerHTML = `
+    <div class="ex-card">
+      <p class="muted small" style="text-align:center">${it.body}</p>
+      <div class="num-list">
+        ${it.sequences.map(s => `<button class="num-card">${s}</button>`).join("")}
+      </div>
+      <p class="muted small" style="text-align:center;margin-top:14px">Toque cada cartão pra marcar como praticado.</p>
+    </div>
+  `;
+  root.querySelectorAll(".num-card").forEach(c => {
+    c.addEventListener("click", () => c.classList.toggle("done"));
+  });
+}
+
+function renderVolume(root, it) {
+  root.innerHTML = `
+    <div class="ex-card">
+      <p class="muted small" style="text-align:center">${it.sub}</p>
+      <p class="ex-prompt" style="margin:16px 0;font-size:20px">"${it.text}"</p>
+      <ol class="steps numbered">
+        ${it.levels.map(l => `<li>${l}</li>`).join("")}
+      </ol>
+      <p class="muted small" style="text-align:center">Mantenha a articulação igual em todos os volumes — só o volume muda.</p>
+    </div>
+  `;
+}
+
+function renderLibrary(root, it) {
+  root.innerHTML = `
+    <div class="ex-card">
+      <p class="muted small" style="text-align:center">${it.genre}${it.author ? ` · ${it.author}` : ""}</p>
+      <p class="library-text">${(it.text || "").replace(/\n/g, "<br>")}</p>
+      <div class="ex-controls">
+        <button class="chip active" id="libRead">🔊 Ler junto comigo</button>
+      </div>
+      <p class="muted small" style="text-align:center;margin-top:14px">Leia em voz alta. Use as pausas naturais da pontuação.</p>
+    </div>
+  `;
+  let speaking = false;
+  $("#libRead").addEventListener("click", () => {
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      speaking = false;
+      $("#libRead").textContent = "🔊 Ler junto comigo";
+      return;
+    }
+    if (!("speechSynthesis" in window)) { toast("Voz não suportada"); return; }
+    const u = new SpeechSynthesisUtterance(it.text);
+    u.lang = "pt-BR";
+    u.rate = 0.9;
+    const voices = window.speechSynthesis.getVoices();
+    const pt = voices.find(v => v.lang && v.lang.startsWith("pt"));
+    if (pt) u.voice = pt;
+    speaking = true;
+    $("#libRead").textContent = "❚❚ Parar";
+    u.onend = () => {
+      speaking = false;
+      $("#libRead").textContent = "🔊 Ler junto comigo";
+    };
+    window.speechSynthesis.speak(u);
+  });
+}
+
+// ====== List view (browse all items in a category) ======
+function showList(catKey) {
+  const cat = CONTENT[catKey];
+  if (!cat) return;
+  cleanupExercise();
+  showScreen("list");
+  $("#listTitle").textContent = cat.name;
+  $("#listCount").textContent = `${cat.items.length} exercícios`;
+  $("#listRandom").onclick = () => {
+    const n = catKey === "fluency" ? 4 : 3;
+    const items = [...cat.items].sort(() => Math.random() - 0.5).slice(0, Math.min(n, cat.items.length)).map(x => ({ ...x, cat: catKey }));
+    startSession(items, "list:" + catKey);
+  };
+  const root = $("#listItems");
+  root.innerHTML = "";
+
+  // Group library by genre
+  if (catKey === "library") {
+    const groups = {};
+    cat.items.forEach((it, i) => {
+      const g = it.genre || "Outros";
+      (groups[g] = groups[g] || []).push({ it, i });
+    });
+    Object.entries(groups).forEach(([genre, arr]) => {
+      const h = document.createElement("h3");
+      h.className = "list-group";
+      h.textContent = genre;
+      root.appendChild(h);
+      arr.forEach(({ it, i }) => root.appendChild(makeListCard(it, i, catKey)));
+    });
+  } else {
+    cat.items.forEach((it, i) => root.appendChild(makeListCard(it, i, catKey)));
+  }
+}
+
+function makeListCard(it, idx, catKey) {
+  const card = document.createElement("button");
+  card.className = "list-card";
+  const icon = exerciseIcon(it);
+  const title = it.title || it.text?.slice(0, 60) || it.topic?.slice(0, 60) || titleFromType(it);
+  const sub = it.sub || it.body?.slice(0, 80) || (it.type === "improv" ? `${it.seconds}s` : "") || "";
+  card.innerHTML = `
+    <span class="lc-icon">${icon}</span>
+    <span class="lc-content">
+      <span class="lc-title">${title}</span>
+      ${sub ? `<span class="lc-sub muted small">${sub}</span>` : ""}
+    </span>
+    <span class="lc-arrow">›</span>
+  `;
+  card.addEventListener("click", () => {
+    startSession([{ ...it, cat: catKey }], "list:" + catKey);
+  });
+  return card;
+}
+
+function exerciseIcon(it) {
+  const map = {
+    breath: "🌬️", prompt: "📝", tongueTwister: "🗣️", pacedRead: "⏱️", pausedRead: "⏸️",
+    metronome: "🥁", improv: "🎤", record: "🎙️", easyOnset: "🌱", prolonged: "🐢",
+    cancellation: "🔄", pullout: "↘️", shadow: "🎵", daf: "🎧", hierarchy: "📈",
+    emotionRead: "🎭", stressShift: "✨", numbers: "🔢", volume: "🔊", library: "📖",
+  };
+  return map[it.type] || "▶︎";
+}
+
 // ===== Wire up =====
 function wire() {
   $("#startDaily").addEventListener("click", () => {
@@ -928,17 +1374,22 @@ function wire() {
     startSession(items, null);
   });
   document.querySelectorAll("[data-cat]").forEach(b => b.addEventListener("click", () => {
-    const cat = b.dataset.cat;
-    const pool = CONTENT[cat].items;
-    const n = cat === "fluency" ? 4 : 3;
-    const items = [...pool].sort(() => Math.random() - 0.5).slice(0, Math.min(n, pool.length)).map(x => ({ ...x, cat }));
-    startSession(items, cat);
+    showList(b.dataset.cat);
   }));
+  $("#listBack").addEventListener("click", () => { cleanupExercise(); showScreen("home"); renderHome(); });
   $("#exBack").addEventListener("click", () => {
     if (session && session.index > 0) { session.index--; renderExercise(); }
-    else { cleanupExercise(); showScreen("home"); }
+    else {
+      cleanupExercise();
+      const back = session && session.source && session.source.startsWith("list:") ? session.source.slice(5) : null;
+      if (back) showList(back); else showScreen("home");
+    }
   });
-  $("#exClose").addEventListener("click", () => { cleanupExercise(); showScreen("home"); });
+  $("#exClose").addEventListener("click", () => {
+    cleanupExercise();
+    const back = session && session.source && session.source.startsWith("list:") ? session.source.slice(5) : null;
+    if (back) showList(back); else showScreen("home");
+  });
   $("#exDone").addEventListener("click", () => nextExercise());
   $("#exSkip").addEventListener("click", () => nextExercise());
   $("#resetBtn").addEventListener("click", () => {
